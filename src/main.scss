@@ -1,0 +1,22 @@
+@import './Componentes/Footer/Footer.scss';
+@import './Componentes/Navbar/Navbar.scss';
+@import './Page/Home/Home.scss';
+@import './Page/Contato/Contact.scss';
+
+html, body, #root {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  .footer-custom {
+    margin-top: auto;
+  }
+  

@@ -1,0 +1,85 @@
+.home {
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .lead {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+  
+    .custom-carousel {
+      margin-left: -15px;
+      margin-right: -15px;
+  
+      .carousel-item img {
+        max-height: 400px; // ajuste o tamanho conforme necessário
+      }
+  
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+  
+      img {
+        border-radius: 0.5rem;
+      }
+    }
+  
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+  
+      &:hover {
+        transform: translateY(-10px);
+      }
+  
+      .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+  
+      .card-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+  
+      .btn-primary {
+        background-color: #007bff;
+        border: none;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  
+    h2 {
+      font-size: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+  
+        &:before {
+          content: '✔️';
+          position: absolute;
+          left: 0;
+          color: #28a745;
+        }
+      }
+    }
+  }
+  

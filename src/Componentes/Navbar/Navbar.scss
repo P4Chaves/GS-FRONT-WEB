@@ -1,0 +1,38 @@
+.navbar-custom {
+    background-color: #f8f9fa;
+  
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+  
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  
+    .nav-link {
+      font-size: 1.1rem;
+      color: #343a40;
+  
+      &:hover {
+        color: #007bff;
+      }
+  
+      &.active {
+        color: #0056b3;
+        font-weight: bold;
+      }
+    }
+  
+    .navbar-toggler {
+      border: none;
+      outline: none;
+  
+      &:focus,
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  
