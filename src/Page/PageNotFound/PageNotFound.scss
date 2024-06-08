@@ -1,0 +1,100 @@
+.page-not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #2e8b57; /* Fundo verde */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+ 
+    .content-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Adicionar sobreposição escura para melhor visibilidade */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+ 
+    .content {
+      z-index: 1;
+      color: #fff;
+      animation: fadeIn 1s ease-in-out;
+ 
+      h1 {
+        font-size: 8rem;
+        margin: 0;
+        color: #fff;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adicionar sombra ao texto */
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+      }
+ 
+      h2 {
+        font-size: 2rem;
+        margin: 20px 0;
+      }
+ 
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+ 
+      .home-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #3498db;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s;
+ 
+        &:hover {
+          background: #2980b9;
+        }
+      }
+    }
+ 
+    &:before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(135deg, rgba(46, 139, 87, 0.3) 25%, transparent 25%),
+                  linear-gradient(225deg, rgba(46, 139, 87, 0.3) 25%, transparent 25%),
+                  linear-gradient(45deg, rgba(46, 139, 87, 0.3) 25%, transparent 25%),
+                  linear-gradient(315deg, rgba(46, 139, 87, 0.3) 25%, transparent 25%);
+      background-size: 50px 50px;
+      animation: backgroundMove 5s linear infinite;
+    }
+ 
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+ 
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+ 
+    @keyframes backgroundMove {
+      0% { background-position: 0 0, 0 0, 0 0, 0 0; }
+      100% { background-position: 50px 50px, 50px 50px, 50px 50px, 50px 50px; }
+    }
+  }
