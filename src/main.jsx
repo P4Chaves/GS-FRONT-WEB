@@ -9,7 +9,7 @@ import Home from './Page/Home/Home';
 import Contact from './Page/Contato/Contact';
 import './main.scss';
 import ChartComponent from './Page/ChartComponent/ChartComponent';
-// import PageNotFound from './Page/PageNotFound/PageNotFound';
+import PageNotFound from './Page/PageNotFound/PageNotFound';
 
 
 const router = createBrowserRouter([
@@ -23,10 +23,10 @@ const router = createBrowserRouter([
 
     ]
   },
-  // {
-  //   path: '*',
-  //   element: <PageNotFound />
-  // }
+  {
+    path: '*',
+    element: <PageNotFound />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
